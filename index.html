@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+
+<body onload="displayRainfall()">
+
+  <style>
+    button {
+      background-color: rgb(201, 194, 194);
+    }
+
+    button:hover {
+      background-color: rgb(80, 221, 24);
+    }
+  </style>
+
+  <p>
+
+    <span>
+      <input type="text" id="prov1" placeholder="Prov" size="5">
+      <input type="number" id="rain1" placeholder="Amount" size="10">
+    </span>
+    <br>
+    <br>
+    <span>
+      <input type="text" id="prov2" placeholder="Prov" size="5">
+      <input type="number" id="rain2" placeholder="Amount" size="10">
+    </span>
+    <br>
+    <br>
+    <button type="button" id="calcRain" onclick="updateRainfall() ; sumRain() ; displayRainfall()">Add Data</button>
+    <br>
+  <p> Rainfall by province: <span id='rainChart'></span></p>
+
+  <script src="index.js"></script>
+  <script src="rainfalldata.js"></script>
+
+</body>
